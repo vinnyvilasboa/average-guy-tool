@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <title> Average Guy Tool </title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">AGT</div>
+            <ul class="nav">
+                <!-- <li><a href="#">About</a></li> -->
+
+            </ul>
+        </div>
+    </nav>
+    <header class="header">
+        <div class="container">
+            <div class="head-title">
+                <h1>Average Guy Tool</h1>
+                <p><strong>The Average Guy Tool</strong> is so that you leave your house well prepared to tell a corny joke, small talk
+                    about the weather, and get motivated for your day. Type your location below. </p>
+            </div>
+            <div class="input-field">
+                <div class="search">
+                    <input type="text" class="search-bar" placeholder="What's your city?">
+                    <button type="submit" class="searchButton">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="boxes">
+        <div class="container">
+            <div class="box">
+                <h2 class="box-title" ><i class="fas fa-smile-wink"></i> Dad Joke</h2>
+                <div class="joke-container">
+                    <h3 class="joke-section">Your joke of the day.</h3>
+                    <!-- <button class="joke-btn">Get Joke</button> -->
+                </div>
+            </div>
+
+            <div class="box">
+                <h2 class="box-title"><i class="fas fa-globe-americas"></i>Weather</h2>
+                <div class="temperature">
+                    <div class="temp-section">
+                        <h3 class="temp-city">Your City</h3>
+                        <h3 class="temp-degree">0<span>°</span><span>F</span></h3>
+                    </div>
+                    <div class="temp-description">
+                    </div>
+                    <img src="https://openweathermap.org/img/wn/04n.png" alt="" class="icon">
+
+                </div>
+
+            </div>
+
+            <div class="box">
+                <h2 class="box-title"><i class="fas fa-quote-left"></i>Motivation</h2>
+                <div class="quotes-container">
+                    <h3 class="quote">Get motivated</h3>
+                    <p class="author">by someone</p>
+                    <!-- <button class="quotes-btn">Get quote</button> -->
+                </div>
+            </div>
+    </section>
+    <script src="app.js" defer></script>
+</body>
+
+</html>
