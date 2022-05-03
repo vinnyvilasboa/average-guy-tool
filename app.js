@@ -9,13 +9,15 @@ let weather = {
         )
             .then((response) => response.json())
             .then((data) => this.displayWeather(data))
+            .catch((err) => console.log("Input City or Check Spelling"))
     },
     displayWeather: function (data) {
         const { name } = data;
         const { icon, description } = data.weather[0];
-        const { temp, humidity } = data.main;
+        let { temp } = data.main;
         console.log(name, icon, description, temp)
-        document.querySelector(".temp-city").innerHTML = "Weather in " + name + " is:";
+        temp = Math.floor(temp);
+        document.querySelector(".temp-city").innerHTML = name;
         document.querySelector(".temp-degree").innerHTML = temp;
         document.querySelector(".temp-description").innerHTML = description;
         document.querySelector(".icon").src = "https://openweathermap.org/img/wn/" + icon + ".png";
@@ -27,27 +29,8 @@ let weather = {
 //////////////////////////////JOKE SECTION//////////////////////////////////
 
 
-// const jokeBtn = document.querySelector(".joke-btn")
-// const jokeSection = document.querySelector(".joke-section")
-// async function fetchJoke() {
-//     const response = await fetch("https://icanhazdadjoke.com", {
-//         headers: {
-//             Accept: "application/json",
-//         },
-//     });
-//     const data = await response.json();
-//     return data
-// }
-// async function handleClick(){
-//     const {joke} = await fetchJoke();
-//     jokeSection.textContent = joke;
-// }
-
-// jokeBtn.addEventListener("click", handleClick)
-
 const jokeBtn = document.querySelector(".joke-btn")
 const jokeSection = document.querySelector(".joke-section")
-//how do i convert this to be able to populate on reload or on click for now?
 async function fetchJoke() {
     const response = await fetch("https://icanhazdadjoke.com", {
         headers: {

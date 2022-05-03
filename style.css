@@ -236,7 +236,12 @@ ul {
     margin-bottom: 2vh;
     font-size: 2em;
 }
-
+.temp-city {
+    font-size: 2.5rem;
+}
+.temp-degree {
+    font-size: 2rem;
+}
 
 /**************************/
 /**********MEDIA QUERIES****************/
