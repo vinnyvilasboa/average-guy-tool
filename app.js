@@ -67,32 +67,6 @@ const fetchQuote = async () => {
 }
 fetchQuote()
 
-// fetch("https://type.fit/api/quotes")
-// .then(response=>response.json())
-// .then(data=>{
-//     var randomIndex = Math.floor(Math.random()*data.length);
-//     document.getElementById("set").innerHTML = data[randomIndex].text;
-// });
-
-//pull random quote from array 
-// async function fetchQuotes () {
-// await fetch("https://type.fit/api/quotes")
-//   .then(response=> response.json())
-//   .then(data => {
-//       let randomQuote = Math.floor(Math.random()*data.length);
-//       console.log(randomQuote)
-//       document.querySelector(".quotes-section").innerHTML = data[randomQuote].text;
-      
-//   });
-// }
-// async function handleClick(){
-//     const {text} = await fetchQuotes();
-//     quotesSection.textContent = text[0];
-//     console.log(text)
-// }
-
-// quotesBtn.addEventListener("click", handleClick)
-
 //https://www.javascripttutorial.net/javascript-fetch-api/
 
 
